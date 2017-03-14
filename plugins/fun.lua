@@ -88,7 +88,7 @@ local function calc(exp)
 	b,c = http.request(url)
 	text = nil
 	if c == 200 then
-    text = 'Result = '..b..'\n____________________\n @BeyondTeam :)'
+    text = 'Result = '..b..'\n____________________\n @GODILOVEYOUME2 :)'
 	elseif c == 400 then
 		text = b
 	else
@@ -233,8 +233,8 @@ if matches[1] == 'voice' then
       return nil
       else
   local url = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..textc
-  local file = download_to_file(url,'BD-Reborn.mp3')
- 				tdcli.sendDocument(msg.to.id, 0, 0, 1, nil, file, '@BeyondTeam', dl_cb, nil)
+  local file = download_to_file(url,'BLACK.mp3')
+ 				tdcli.sendDocument(msg.to.id, 0, 0, 1, nil, file, '@GODILOVEYOUME2', dl_cb, nil)
    end
 end
 
@@ -242,7 +242,7 @@ end
 	if matches[1] == "tr" then 
 		url = https.request('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160119T111342Z.fd6bf13b3590838f.6ce9d8cca4672f0ed24f649c1b502789c9f4687a&format=plain&lang='..URL.escape(matches[2])..'&text='..URL.escape(matches[3]))
 		data = json:decode(url)
-		return 'زبان : '..data.lang..'\nترجمه : '..data.text[1]..'\n____________________\n @BeyondTeam :)'
+		return 'زبان : '..data.lang..'\nترجمه : '..data.text[1]..'\n____________________\n @GODILOVEYOUME2 :)'
 	end
 --------------------------------
 	if matches[1]:lower() == 'short' then
@@ -304,7 +304,7 @@ end
 		local url = "https://assets.imgix.net/examples/clouds.jpg?blur=150&w="..w.."&h="..h.."&fit=crop&txt="..eq.."&txtsize="..txtsize.."&txtclr="..txtclr.."&txtalign=middle,center&txtfont=Futura%20Condensed%20Medium&mono=ff6598cc"
 		local receiver = msg.to.id
 		local  file = download_to_file(url,'text.jpg')
-		tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, file, "@BeyondTeam", dl_cb, nil)
+		tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, file, "@GODILOVEYOUME2", dl_cb, nil)
 	end
 
 
