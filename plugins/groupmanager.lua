@@ -61,9 +61,9 @@ end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
     if not lang then
-  return '*Group has been added❇️*'
+  return '*Group has been added*'
 else
-  return '❇️گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
+  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
 end
 end
 
@@ -616,7 +616,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Link* _Posting Has Been Locked_"
 else
- return "✅ارسال لینک در گروه ممنوع شد"
+ return "ارسال لینک در گروه ممنوع شد"
 end
 end
 end
@@ -637,14 +637,14 @@ local lock_link = data[tostring(target)]["settings"]["lock_link"]
 if not lang then
 return "*Link* _Posting Is Not Locked_" 
 elseif lang then
-return "✅ارسال لینک در گروه ممنوع نمیباشد"
+return "ارسال لینک در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_link"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Link* _Posting Has Been Unlocked_" 
 else
-return "☑️ارسال لینک در گروه آزاد شد"
+return "ارسال لینک در گروه آزاد شد"
 end
 end
 end
@@ -1343,10 +1343,10 @@ end
 if not lang then
 
 local settings = data[tostring(target)]["settings"] 
- text = "*Group Settings:*\n_Lock edit :_ *"..settings.lock_edit.."*\n_Lock links :_ *"..settings.lock_link.."*\n_Lock tags :_ *"..settings.lock_tag.."*\n_Lock flood :_ *"..settings.flood.."*\n_Lock spam :_ *"..settings.lock_spam.."*\n_Lock mention :_ *"..settings.lock_mention.."*\n_Lock arabic :_ *"..settings.lock_arabic.."*\n_Lock webpage :_ *"..settings.lock_webpage.."*\n_Lock markdown :_ *"..settings.lock_markdown.."*\n_Group welcome :_ *"..settings.welcome.."*\n_Lock pin message :_ *"..settings.lock_pin.."*\n_Bots protection :_ *"..settings.lock_bots.."*\n_Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_Expire Date⌚️ :_ *"..expire_date.."*\n*Bot channel*: @GODILOVEYOUME2\n*Group Language* : *EN*"
+ text = "*Group Settings:*\n_Lock edit :_ *"..settings.lock_edit.."*\n_Lock links :_ *"..settings.lock_link.."*\n_Lock tags :_ *"..settings.lock_tag.."*\n_Lock flood :_ *"..settings.flood.."*\n_Lock spam :_ *"..settings.lock_spam.."*\n_Lock mention :_ *"..settings.lock_mention.."*\n_Lock arabic :_ *"..settings.lock_arabic.."*\n_Lock webpage :_ *"..settings.lock_webpage.."*\n_Lock markdown :_ *"..settings.lock_markdown.."*\n_Group welcome :_ *"..settings.welcome.."*\n_Lock pin message :_ *"..settings.lock_pin.."*\n_Bots protection :_ *"..settings.lock_bots.."*\n_Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_Expire Date :_ *"..expire_date.."*\n*Bot channel*: @GODILOVEYOUME2\n*Group Language* : *EN*"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "*تنظیمات گروه:*\n_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n_قفل لینک :_ *"..settings.lock_link.."*\n_قفل تگ :_ *"..settings.lock_tag.."*\n_قفل پیام مکرر :_ *"..settings.flood.."*\n_قفل هرزنامه :_ *"..settings.lock_spam.."*\n_قفل فراخوانی :_ *"..settings.lock_mention.."*\n_قفل عربی :_ *"..settings.lock_arabic.."*\n_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n_قفل فونت :_ *"..settings.lock_markdown.."*\n_پیام خوشآمد گویی :_ *"..settings.welcome.."*\n_قفل سنجاق کردن :_ *"..settings.lock_pin.."*\n_محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n_حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_⌚️تاریخ انقضا :_ *"..expire_date.."*\n*کانال ما*: @GODILOVEYOUME2\n_زبان سوپرگروه_ : *FA*"
+ text = "*تنظیمات گروه:*\n_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n_قفل لینک :_ *"..settings.lock_link.."*\n_قفل تگ :_ *"..settings.lock_tag.."*\n_قفل پیام مکرر :_ *"..settings.flood.."*\n_قفل هرزنامه :_ *"..settings.lock_spam.."*\n_قفل فراخوانی :_ *"..settings.lock_mention.."*\n_قفل عربی :_ *"..settings.lock_arabic.."*\n_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n_قفل فونت :_ *"..settings.lock_markdown.."*\n_پیام خوشآمد گویی :_ *"..settings.welcome.."*\n_قفل سنجاق کردن :_ *"..settings.lock_pin.."*\n_محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n_حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_تاریخ انقضا :_ *"..expire_date.."*\n*کانال ما*: @GODILOVEYOUME2\n_زبان سوپرگروه_ : *FA*"
 end
 return text
 end
@@ -2402,9 +2402,9 @@ local function getpro(arg, data)
      end
    else
        if not lang then
-      tdcli.sendMessage(msg.to.id, msg.id_, 1, "`🚫You Have Not Profile Photo...!`\n\n> *Chat ID📍 :* `"..msg.to.id.."`\n*User ID🆔 :* `"..msg.from.id.."`", 1, 'md')
+      tdcli.sendMessage(msg.to.id, msg.id_, 1, "`You Have Not Profile Photo...!`\n\n> *Chat ID :* `"..msg.to.id.."`\n*User ID :* `"..msg.from.id.."`", 1, 'md')
        elseif lang then
-      tdcli.sendMessage(msg.to.id, msg.id_, 1, "_🚫شما هیچ عکسی ندارید...!_\n\n> _📍شناسه گروه :_ `"..msg.to.id.."`\n_شناسه شما🆔 :_ `"..msg.from.id.."`", 1, 'md')
+      tdcli.sendMessage(msg.to.id, msg.id_, 1, "_شما هیچ عکسی ندارید...!_\n\n> _شناسه گروه :_ `"..msg.to.id.."`\n_شناسه شما :_ `"..msg.from.id.."`", 1, 'md')
             end
         end
    end
@@ -3060,130 +3060,130 @@ end
 if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
-*🕹BLACK Bot Commands:*
+*BLACK Bot Commands:*
 
 *!setowner* `[username|id|reply]` 
-_👤Set Group Owner(Multi Owner)_
+_Set Group Owner(Multi Owner)_
 
 *!remowner* `[username|id|reply]` 
- _👤Remove User From Owner List_
+ _Remove User From Owner List_
 
 *!promote* `[username|id|reply]` 
-_❇️Promote User To Group Admin_
+_Promote User To Group Admin_
 
 *!demote* `[username|id|reply]` 
-_❇️Demote User From Group Admins List_
+_Demote User From Group Admins List_
 
 *!setflood* `[1-50]`
-_🛡Set Flooding Number_
+_Set Flooding Number_
 
 *!silent* `[username|id|reply]` 
-_📛Silent User From Group_
+_Silent User From Group_
 
 *!unsilent* `[username|id|reply]` 
-_📛📛Unsilent User From Group_
+_Unsilent User From Group_
 
 *!kick* `[username|id|reply]` 
-_🚫Kick User From Group_
+_Kick User From Group_
 
 *!ban* `[username|id|reply]` 
-_👤🚫Ban User From Group_
+_Ban User From Group_
 
 *!unban* `[username|id|reply]` 
-_👤✅UnBan User From Group_
+_UnBan User From Group_
 
 *!res* `[username]`
-_✨✨Show User ID_
+_Show User ID_
 
 *!id* `[reply]`
-🆔Show User ID_
+_Show User ID_
 
 *!whois* `[id]`
-_🌐Show User's Username And Name_
+_Show User's Username And Name_
 
 *!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_🔒If This Actions Lock, Bot Check Actions And Delete Them_
+_If This Actions Lock, Bot Check Actions And Delete Them_
 
 *!unlock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_🔓If This Actions Unlock, Bot Not Delete Them_
+_If This Actions Unlock, Bot Not Delete Them_
 
 *!mute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_🔐If This Actions Lock, Bot Check Actions And Delete Them_
+_If This Actions Lock, Bot Check Actions And Delete Them_
 
 *!unmute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_🔓If This Actions Unlock, Bot Not Delete Them_
+_If This Actions Unlock, Bot Not Delete Them_
 
 *!set*`[rules | name | photo | link | about | welcome]`
-_🖲Bot Set Them_
+_Bot Set Them_
 
 *!clean* `[bans | mods | bots | rules | about | silentlist | filtelist | welcome]`   
-_⚙️Bot Clean Them_
+_Bot Clean Them_
 
 *!filter* `[word]`
-_☑️Word filter_
+_Word filter_
 
 *!unfilter* `[word]`
-_☑️Word unfilter_
+_Word unfilter_
 
 *!pin* `[reply]`
-_✅Pin Your Message_
+_Pin Your Message_
 
 *!unpin* 
-_✅Unpin Pinned Message_
+_Unpin Pinned Message_
 
 *!welcome enable/disable*
-_✔️Enable Or Disable Group Welcome_
+_Enable Or Disable Group Welcome_
 
 *!settings*
-_🛠Show Group Settings_
+_Show Group Settings_
 
 *!mutelist*
-_🖨Show Mutes List_
+_Show Mutes List_
 
 *!silentlist*
-_✨Show Silented Users List_
+_Show Silented Users List_
 
 *!filterlist*
-_🖨Show Filtered Words List_
+_Show Filtered Words List_
 
 *!banlist*
-_📱Show Banned Users List_
+_Show Banned Users List_
 
 *!ownerlist*
-_🖨Show Group Owners List_ 
+_Show Group Owners List_ 
 
 *!modlist* 
-_📱Show Group Moderators List_
+_Show Group Moderators List_
 
 *!rules*
-_⚖️Show Group Rules_
+_Show Group Rules_
 
 *!about*
-_💎Show Group Description_
+_Show Group Description_
 
 *!id*
-_🆔Show Your And Chat ID_
+_Show Your And Chat ID_
 
 *!gpinfo*
-_🎛Show Group Information_
+_Show Group Information_
 
 *!newlink*
-_📍Create A New Link_
+_Create A New Link_
 
 *!link*
-_📍Show Group Link_
+_Show Group Link_
 
 *!linkpv*
-_📍Send Group Link In Your Private Message_
+_Send Group Link In Your Private Message_
 
 *!setwelcome [text]*
-_✨set Welcome Message_
+_set Welcome Message_
 
 *!helptools*
-_✨Show Tools Help_
+_Show Tools Help_
 
 *!helpfun*
-_✨Show Fun Help_
+_Show Fun Help_
 
 _You Can Use_ *[!/#]* _To Run The Commands_
 _This Help List Only For_ *Moderators/Owners!*
@@ -3194,130 +3194,130 @@ _Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
 elseif lang then
 
 text = [[
-*🕹دستورات ربات بلک:*
+*دستورات ربات بلک:*
 
 *!setowner* `[username|id|reply]` 
-_انتخاب مالک گروه(قابل انتخاب چند مالک👤)_
+_انتخاب مالک گروه(قابل انتخاب چند مالک)_
 
 *!remowner* `[username|id|reply]` 
- _حذف کردن فرد از فهرست مالکان گروه👤_
+ _حذف کردن فرد از فهرست مالکان گروه_
 
 *!promote* `[username|id|reply]` 
-_ارتقا مقام کاربر به مدیر گروه❇️_
+_ارتقا مقام کاربر به مدیر گروه_
 
 *!demote* `[username|id|reply]` 
-_تنزیل مقام مدیر به کاربر❇️_
+_تنزیل مقام مدیر به کاربر_
 
 *!setflood* `[1-50]`
-_تنظیم حداکثر تعداد پیام مکرر🛡_
+_تنظیم حداکثر تعداد پیام مکرر_
 
 *!silent* `[username|id|reply]` 
-_بیصدا کردن کاربر در گروه📛_
+_بیصدا کردن کاربر در گروه_
 
 *!unsilent* `[username|id|reply]` 
-_در آوردن کاربر از حالت بیصدا در گروه📛📛_
+_در آوردن کاربر از حالت بیصدا در گروه_
 
 *!kick* `[username|id|reply]` 
-_حذف کاربر از گروه🚫_
+_حذف کاربر از گروه_
 
 *!ban* `[username|id|reply]` 
-_مسدود کردن کاربر از گروه👤🚫_
+_مسدود کردن کاربر از گروه_
 
 *!unban* `[username|id|reply]` 
-_در آوردن از حالت مسدودیت کاربر از گروه👤✅_
+_در آوردن از حالت مسدودیت کاربر از گروه_
 
 *!res* `[username]`
-_نمایش شناسه کاربر✨✨_
+_نمایش شناسه کاربر_
 
 *!id* `[reply]`
-_نمایش شناسه کاربر🆔_
+_نمایش شناسه کاربر_
 
 *!whois* `[id]`
-_نمایش نام کاربر, نام کاربری و اطلاعات حساب🌐_
+_نمایش نام کاربر, نام کاربری و اطلاعات حساب_
 
 *!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_در صورت قفل بودن فعالیت ها, ربات آنهارا حذف خواهد کرد🔒_
+_در صورت قفل بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
 
 *!unlock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_در صورت قفل نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد🔓_
+_در صورت قفل نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
 
 *!mute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_در صورت بیصدد بودن فعالیت ها, ربات آنهارا حذف خواهد کرد🔐_
+_در صورت بیصدد بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
 
 *!unmute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_در صورت بیصدا نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد🔓_
+_در صورت بیصدا نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
 
 *!set*`[rules | name | photo | link | about | welcome]`
-_ربات آنهارا ثبت خواهد کرد🖲_
+_ربات آنهارا ثبت خواهد کرد_
 
 *!clean* `[bans | mods | bots | rules | about | silentlist | filterlist | welcome]`   
-_ربات آنهارا پاک خواهد کرد⚙️_
+_ربات آنهارا پاک خواهد کرد_
 
 *!filter* `[word]`
-_فیلتر‌کلمه مورد نظر☑️_
+_فیلتر‌کلمه مورد نظر_
 
 *!unfilter* `[word]`
-_ازاد کردن کلمه مورد نظر☑️_
+_ازاد کردن کلمه مورد نظر_
 
 *!pin* `[reply]`
-_ربات پیام شمارا در گروه سنجاق خواهد کرد✅_
+_ربات پیام شمارا در گروه سنجاق خواهد کرد_
 
 *!unpin* 
-_ربات پیام سنجاق شده در گروه را حذف خواهد کرد✅_
+_ربات پیام سنجاق شده در گروه را حذف خواهد کرد_
 
 *!welcome enable/disable*
-_فعال یا غیرفعال کردن خوشآمد گویی✔️_
+_فعال یا غیرفعال کردن خوشآمد گویی_
 
 *!settings*
-_نمایش تنظیمات گروه🛠_
+_نمایش تنظیمات گروه_
 
 *!mutelist*
-_نمایش فهرست بیصدا های گروه🖨_
+_نمایش فهرست بیصدا های گروه_
 
 *!silentlist*
-_نمایش فهرست افراد بیصدا✨_
+_نمایش فهرست افراد بیصدا_
 
 *!filterlist*
-_نمایش لیست کلمات فیلتر شده🖨_
+_نمایش لیست کلمات فیلتر شده_
 
 *!banlist*
-_نمایش افراد مسدود شده از گروه📱_
+_نمایش افراد مسدود شده از گروه_
 
 *!ownerlist*
-_نمایش فهرست مالکان گروه🖨_ 
+_نمایش فهرست مالکان گروه_ 
 
 *!modlist* 
-_نمایش فهرست مدیران گروه📱_
+_نمایش فهرست مدیران گروه_
 
 *!rules*
-_نمایش قوانین گروه⚖️_
+_نمایش قوانین گروه_
 
 *!about*
-_نمایش درباره گروه💎_
+_نمایش درباره گروه_
 
 *!id*
-_نمایش شناسه شما و گروه🆔_
+_نمایش شناسه شما و گروه_
 
 *!gpinfo*
-_نمایش اطلاعات گروه📍_
+_نمایش اطلاعات گروه_
 
 !*newlink*
-_ساخت لینک جدید📍_
+_ساخت لینک جدید_
 
 *!link*
-_نمایش لینک گروه📍_
+_نمایش لینک گروه_
 
 *!linkpv*
-_ارسال لینک گروه به چت خصوصی شما✨_
+_ارسال لینک گروه به چت خصوصی شما_
 
 *!setwelcome [text]*
-_ثبت پیام خوش آمد گویی✨_
+_ثبت پیام خوش آمد گویی_
 
 *!helptools*
-_نمایش راهنمای Tools✨_
+_نمایش راهنمای Tools_
 
 *!helpfun*
-_نمایش راهنمای سرگرمی✨_
+_نمایش راهنمای سرگرمی_
 
 _شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید
 
@@ -3402,9 +3402,9 @@ local lang = redis:get(hash)
 rules = administration[arg.chat_id]['rules']
 else
    if not lang then
-     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@BeyondTeam"
+     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@GODILOVEYOUME2"
     elseif lang then
-       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n@BeyondTeam"
+       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n@GODILOVEYOUME2"
  end
 end
 if data.username_ then
