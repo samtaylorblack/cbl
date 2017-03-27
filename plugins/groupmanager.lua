@@ -61,9 +61,9 @@ end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
     if not lang then
-  return '*Group has been added*'
+  return '*Group has been added❇️*'
 else
-  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
+  return '❇️گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
 end
 end
 
