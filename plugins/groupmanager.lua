@@ -3185,9 +3185,9 @@ _Show Tools Help_
 *!helpfun*
 _Show Fun Help_
 
-_You Can Use_ *[!/#]* _To Run The Commands_
-_This Help List Only For_ *Moderators/Owners!*
-_Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
+_✅You Can Use_ *[!/#]* _To Run The Commands_
+_✅This Help List Only For_ *Moderators/Owners!*
+_✅Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
 
 *Good luck ;)*]]
 
@@ -3319,11 +3319,11 @@ _نمایش راهنمای Tools_
 *!helpfun*
 _نمایش راهنمای سرگرمی_
 
-_شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید
+_شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید✅
 
-این راهنما فقط برای مدیران/مالکان گروه میباشد!
+این راهنما فقط برای مدیران/مالکان گروه میباشد!✅
 
-این به این معناست که فقط مدیران/مالکان گروه میتوانند از دستورات بالا استفاده کنند!_
+این به این معناست که فقط مدیران/مالکان گروه میتوانند از دستورات بالا استفاده کنند!✅_
 
 *موفق باشید ;)*]]
 end
@@ -3343,9 +3343,9 @@ end
 		data[tostring(chat)]['settings']['welcome'] = "yes"
 	    save_data(_config.moderation.data, data)
        if not lang then
-				return "_Group_ *welcome* _has been enabled_"
+				return "_Group_ *welcome* _has been enabled✅_"
        elseif lang then
-				return "_خوشآمد گویی فعال شد_"
+				return "_✅خوشآمد گویی فعال شد_"
           end
 			end
 		end
@@ -3402,9 +3402,9 @@ local lang = redis:get(hash)
 rules = administration[arg.chat_id]['rules']
 else
    if not lang then
-     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@GODILOVEYOUME2"
+     rules = "⚖️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@GODILOVEYOUME2"
     elseif lang then
-       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n@GODILOVEYOUME2"
+       rules = "⚖️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n@GODILOVEYOUME2"
  end
 end
 if data.username_ then
