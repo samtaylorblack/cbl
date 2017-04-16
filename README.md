@@ -1,4 +1,4 @@
-# [BDReborn](https://telegram.me/BDReborn)
+# [вℓα¢к ™](https://telegram.me/Mytelegramappnew)
 
 **An advanced and powerful administration bot based on NEW TG-CLI
 
@@ -20,17 +20,17 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/botme2018/sky202020.git
-cd sky202020
+git clone https://github.com/samtaylorblack/black.git
+cd black
 chmod +x beyond.sh
-./beyond.sh install
-./beyond.sh 
+beybal.sh install
+./beybal.sh 
 # Enter a phone number & confirmation code.
 ```
 ### One command
 To install everything in one command, use:
 ```sh
-cd $HOME && git clone https://github.com/botme2018/sky202020.git && cd sky202020 && chmod +x beyond.sh && ./beyond.sh install && ./beyond.sh
+cd $HOME && git clone https://github.com/samtaylorblack/black.git && cd black && chmod +x beybal.sh && ./beybal.sh install && ./beyond.sh
 ```
 
 * * *
@@ -40,7 +40,7 @@ cd $HOME && git clone https://github.com/botme2018/sky202020.git && cd sky202020
 Open ./bot/bot.lua and add your ID to the "sudo_users" section in the following format:
 ```
     sudo_users = {
-    157059515,
+    202024626,
     0,
     YourID
   }
@@ -49,33 +49,7 @@ add your ID at line 72 in bot.lua and add your ID at line 2 in tools.lua, Then r
 
 # Support and Development
 
-More information [Beyond Global Chat](https://t.me/joinchat/AAAAAEGaKOxC8K6cJ3bCcw)
+
 
 # Special thanks to
-[@nero_dev](https://telegram.me/nero_dev)
-
-[@K_a_I_i_I_i_n_u_x](https://telegram.me/K_a_I_i_I_i_n_u_x)
-
-[@MrHalix](https://github.com/MrHalix)
-
-[@Vysheng](https://github.com/vysheng)
-
-* * *
-
-# Developers!
-
-[SoLiD](https://github.com/solid021) ([Telegram](https://telegram.me/SoLiD))
-
-[To0fan](https://github.com/To0fan) ([Telegram](https://telegram.me/To0fan))
-
-[MAKAN](https://github.com/makanj) ([Telegram](https://telegram.me/MAKAN))
-
-[Ali](https://github.com/ali-ghoghnoos) ([Telegram](https://telegram.me/Exacute))
-
-[Rixel](https://github.com/Rixel) ([Telegram](https://telegram.me/Rixel))
-
-[Civey](https://github.com/Oysof) ([Telegram](https://telegram.me/Civey))
-
-### Our Telegram channel:
-
-[@BeyondTeam](https://telegram.me/BeyondTeam)
+[ُSam(Taylor)](https://telegram.me/GODILOVEYOUME2)
