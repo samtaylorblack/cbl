@@ -608,7 +608,7 @@ if lock_link == "yes" then
 if not lang then
  return "*Link* _Posting Is Already Locked_"
 elseif lang then
- return "ارسال لینک در گروه هم اکنون ممنوع است"
+ return "🔐ارسال لینک در گروه هم اکنون ممنوع است"
 end
 else
 data[tostring(target)]["settings"]["lock_link"] = "yes"
@@ -616,7 +616,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Link* _Posting Has Been Locked_"
 else
- return "ارسال لینک در گروه ممنوع شد"
+ return "🔐ارسال لینک در گروه ممنوع شد"
 end
 end
 end
@@ -637,14 +637,14 @@ local lock_link = data[tostring(target)]["settings"]["lock_link"]
 if not lang then
 return "*Link* _Posting Is Not Locked_" 
 elseif lang then
-return "ارسال لینک در گروه ممنوع نمیباشد"
+return "🔓ارسال لینک در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_link"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Link* _Posting Has Been Unlocked_" 
 else
-return "ارسال لینک در گروه آزاد شد"
+return "🔓ارسال لینک در گروه آزاد شد"
 end
 end
 end
@@ -666,7 +666,7 @@ if lock_tag == "yes" then
 if not lang then
  return "*Tag* _Posting Is Already Locked_"
 elseif lang then
- return "ارسال تگ در گروه هم اکنون ممنوع است"
+ return "🔐ارسال تگ در گروه هم اکنون ممنوع است"
 end
 else
  data[tostring(target)]["settings"]["lock_tag"] = "yes"
@@ -674,7 +674,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Tag* _Posting Has Been Locked_"
 else
- return "ارسال تگ در گروه ممنوع شد"
+ return "🔐ارسال تگ در گروه ممنوع شد"
 end
 end
 end
@@ -695,14 +695,14 @@ local lock_tag = data[tostring(target)]["settings"]["lock_tag"]
 if not lang then
 return "*Tag* _Posting Is Not Locked_" 
 elseif lang then
-return "ارسال تگ در گروه ممنوع نمیباشد"
+return "🔓ارسال تگ در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_tag"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Tag* _Posting Has Been Unlocked_" 
 else
-return "ارسال تگ در گروه آزاد شد"
+return "🔓ارسال تگ در گروه آزاد شد"
 end
 end
 end
@@ -724,7 +724,7 @@ if lock_mention == "yes" then
 if not lang then
  return "*Mention* _Posting Is Already Locked_"
 elseif lang then
- return "ارسال فراخوانی افراد هم اکنون ممنوع است"
+ return "🔐ارسال فراخوانی افراد هم اکنون ممنوع است"
 end
 else
  data[tostring(target)]["settings"]["lock_mention"] = "yes"
@@ -732,7 +732,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
  return "*Mention* _Posting Has Been Locked_"
 else 
- return "ارسال فراخوانی افراد در گروه ممنوع شد"
+ return "🔐ارسال فراخوانی افراد در گروه ممنوع شد"
 end
 end
 end
@@ -753,14 +753,14 @@ local lock_mention = data[tostring(target)]["settings"]["lock_mention"]
 if not lang then
 return "*Mention* _Posting Is Not Locked_" 
 elseif lang then
-return "ارسال فراخوانی افراد در گروه ممنوع نمیباشد"
+return "🔓ارسال فراخوانی افراد در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_mention"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Mention* _Posting Has Been Unlocked_" 
 else
-return "ارسال فراخوانی افراد در گروه آزاد شد"
+return "🔓ارسال فراخوانی افراد در گروه آزاد شد"
 end
 end
 end
@@ -782,7 +782,7 @@ if lock_arabic == "yes" then
 if not lang then
  return "*Arabic/Persian* _Posting Is Already Locked_"
 elseif lang then
- return "ارسال کلمات عربی/فارسی در گروه هم اکنون ممنوع است"
+ return "🔐ارسال کلمات عربی/فارسی در گروه هم اکنون ممنوع است"
 end
 else
 data[tostring(target)]["settings"]["lock_arabic"] = "yes"
@@ -790,7 +790,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Arabic/Persian* _Posting Has Been Locked_"
 else
- return "ارسال کلمات عربی/فارسی در گروه ممنوع شد"
+ return "🔐ارسال کلمات عربی/فارسی در گروه ممنوع شد"
 end
 end
 end
@@ -811,14 +811,14 @@ local lock_arabic = data[tostring(target)]["settings"]["lock_arabic"]
 if not lang then
 return "*Arabic/Persian* _Posting Is Not Locked_" 
 elseif lang then
-return "ارسال کلمات عربی/فارسی در گروه ممنوع نمیباشد"
+return "🔓ارسال کلمات عربی/فارسی در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_arabic"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Arabic/Persian* _Posting Has Been Unlocked_" 
 else
-return "ارسال کلمات عربی/فارسی در گروه آزاد شد"
+return "🔓ارسال کلمات عربی/فارسی در گروه آزاد شد"
 end
 end
 end
@@ -840,7 +840,7 @@ if lock_edit == "yes" then
 if not lang then
  return "*Editing* _Is Already Locked_"
 elseif lang then
- return "ویرایش پیام هم اکنون ممنوع است"
+ return "🔐ویرایش پیام هم اکنون ممنوع است"
 end
 else
  data[tostring(target)]["settings"]["lock_edit"] = "yes"
@@ -848,7 +848,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Editing* _Has Been Locked_"
 else
- return "ویرایش پیام در گروه ممنوع شد"
+ return "🔐ویرایش پیام در گروه ممنوع شد"
 end
 end
 end
@@ -869,14 +869,14 @@ local lock_edit = data[tostring(target)]["settings"]["lock_edit"]
 if not lang then
 return "*Editing* _Is Not Locked_" 
 elseif lang then
-return "ویرایش پیام در گروه ممنوع نمیباشد"
+return "🔓ویرایش پیام در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_edit"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Editing* _Has Been Unlocked_" 
 else
-return "ویرایش پیام در گروه آزاد شد"
+return "🔓ویرایش پیام در گروه آزاد شد"
 end
 end
 end
@@ -898,7 +898,7 @@ if lock_spam == "yes" then
 if not lang then
  return "*Spam* _Is Already Locked_"
 elseif lang then
- return "ارسال هرزنامه در گروه هم اکنون ممنوع است"
+ return "🔐ارسال هرزنامه در گروه هم اکنون ممنوع است"
 end
 else
  data[tostring(target)]["settings"]["lock_spam"] = "yes"
@@ -906,7 +906,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Spam* _Has Been Locked_"
 else
- return "ارسال هرزنامه در گروه ممنوع شد"
+ return "🔐ارسال هرزنامه در گروه ممنوع شد"
 end
 end
 end
@@ -927,7 +927,7 @@ local lock_spam = data[tostring(target)]["settings"]["lock_spam"]
 if not lang then
 return "*Spam* _Posting Is Not Locked_" 
 elseif lang then
- return "ارسال هرزنامه در گروه ممنوع نمیباشد"
+ return "🔓ارسال هرزنامه در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_spam"] = "no" 
@@ -935,7 +935,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
 return "*Spam* _Posting Has Been Unlocked_" 
 else
- return "ارسال هرزنامه در گروه آزاد شد"
+ return "🔓ارسال هرزنامه در گروه آزاد شد"
 end
 end
 end
@@ -957,7 +957,7 @@ if lock_flood == "yes" then
 if not lang then
  return "*Flooding* _Is Already Locked_"
 elseif lang then
- return "ارسال پیام مکرر در گروه هم اکنون ممنوع است"
+ return "🔐ارسال پیام مکرر در گروه هم اکنون ممنوع است"
 end
 else
  data[tostring(target)]["settings"]["flood"] = "yes"
@@ -965,7 +965,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*Flooding* _Has Been Locked_"
 else
- return "ارسال پیام مکرر در گروه ممنوع شد"
+ return "🔐ارسال پیام مکرر در گروه ممنوع شد"
 end
 end
 end
@@ -986,14 +986,14 @@ local lock_flood = data[tostring(target)]["settings"]["flood"]
 if not lang then
 return "*Flooding* _Is Not Locked_" 
 elseif lang then
-return "ارسال پیام مکرر در گروه ممنوع نمیباشد"
+return "🔓ارسال پیام مکرر در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["flood"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*Flooding* _Has Been Unlocked_" 
 else
-return "ارسال پیام مکرر در گروه آزاد شد"
+return "🔓ارسال پیام مکرر در گروه آزاد شد"
 end
 end
 end
@@ -1343,10 +1343,10 @@ end
 if not lang then
 
 local settings = data[tostring(target)]["settings"] 
- text = "*Group Settings👥⚙:*\n_🔹Lock edit :_ *"..settings.lock_edit.."*\n_🔹Lock links :_ *"..settings.lock_link.."*\n_🔹Lock tags :_ *"..settings.lock_tag.."*\n_🔹Lock flood :_ *"..settings.flood.."*\n_🔹Lock spam :_ *"..settings.lock_spam.."*\n_🔹Lock mention :_ *"..settings.lock_mention.."*\n_🔸Lock arabic :_ *"..settings.lock_arabic.."*\n_🔸Lock webpage :_ *"..settings.lock_webpage.."*\n_🔸Lock markdown :_ *"..settings.lock_markdown.."*\n_🔸Group welcome :_ *"..settings.welcome.."*\n_🔸Lock pin message :_ *"..settings.lock_pin.."*\n_🔸Bots protection :_ *"..settings.lock_bots.."*\n_🔸Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_⌚️Expire Date :_ *"..expire_date.."*\n*Bot channel🔮*: @GODILOVEYOUME2\n*Group Language🌐* : *english🇮🇸*"
+ text = "*Group Settings👥⚙:*\n_🔹Lock edit :_ *"..settings.lock_edit.."*\n_🔹Lock links :_ *"..settings.lock_link.."*\n_🔹Lock tags :_ *"..settings.lock_tag.."*\n_🔹Lock flood :_ *"..settings.flood.."*\n_🔹Lock spam :_ *"..settings.lock_spam.."*\n_🔹Lock mention :_ *"..settings.lock_mention.."*\n_🔸Lock arabic :_ *"..settings.lock_arabic.."*\n_🔸Lock webpage :_ *"..settings.lock_webpage.."*\n_🔸Lock markdown :_ *"..settings.lock_markdown.."*\n_🔸Group welcome :_ *"..settings.welcome.."*\n_🔸Lock pin message :_ *"..settings.lock_pin.."*\n_🔸Bots protection :_ *"..settings.lock_bots.."*\n_🔸Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_⌚️Expire Date :_ *"..expire_date.."*\n*Bot channel🔮*: @GODILOVEYOUME2\n*Group Language🌐* : *English🇮🇸*"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "*تنظیمات گروه👥⚙:*\n_🔹قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n_🔹قفل لینک :_ *"..settings.lock_link.."*\n_🔹قفل تگ :_ *"..settings.lock_tag.."*\n_🔹قفل پیام مکرر :_ *"..settings.flood.."*\n_🔹قفل هرزنامه :_ *"..settings.lock_spam.."*\n_🔹قفل فراخوانی :_ *"..settings.lock_mention.."*\n_🔸قفل عربی :_ *"..settings.lock_arabic.."*\n_🔸قفل صفحات وب :_ *"..settings.lock_webpage.."*\n_🔸قفل فونت :_ *"..settings.lock_markdown.."*\n_🔸پیام خوشآمد گویی :_ *"..settings.welcome.."*\n_🔸قفل سنجاق کردن :_ *"..settings.lock_pin.."*\n_🔸محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n_🔸حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_⌚️تاریخ انقضا :_ *"..expire_date.."*\n*🔮کانال ما*: @GODILOVEYOUME2\n_🌐زبان سوپرگروه_ : *farsi🇮🇷*"
+ text = "*تنظیمات گروه👥⚙:*\n_🔹قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n_🔹قفل لینک :_ *"..settings.lock_link.."*\n_🔹قفل تگ :_ *"..settings.lock_tag.."*\n_🔹قفل پیام مکرر :_ *"..settings.flood.."*\n_🔹قفل هرزنامه :_ *"..settings.lock_spam.."*\n_🔹قفل فراخوانی :_ *"..settings.lock_mention.."*\n_🔸قفل عربی :_ *"..settings.lock_arabic.."*\n_🔸قفل صفحات وب :_ *"..settings.lock_webpage.."*\n_🔸قفل فونت :_ *"..settings.lock_markdown.."*\n_🔸پیام خوشآمد گویی :_ *"..settings.welcome.."*\n_🔸قفل سنجاق کردن :_ *"..settings.lock_pin.."*\n_🔸محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n_🔸حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n*____________________*\n_⌚️تاریخ انقضا :_ *"..expire_date.."*\n*🔮کانال ما*: @GODILOVEYOUME2\n_🌐زبان سوپرگروه_ : *فارسی🇮🇷*"
 end
 return text
 end
@@ -2376,10 +2376,10 @@ end
 end
 if not lang then
 local mutes = data[tostring(target)]["mutes"] 
- text = " *Group Mute List* : \n_Mute all : _ *"..mutes.mute_all.."*\n_Mute gif :_ *"..mutes.mute_gif.."*\n_Mute text :_ *"..mutes.mute_text.."*\n_Mute inline :_ *"..mutes.mute_inline.."*\n_Mute game :_ *"..mutes.mute_game.."*\n_Mute photo :_ *"..mutes.mute_photo.."*\n_Mute video :_ *"..mutes.mute_video.."*\n_Mute audio :_ *"..mutes.mute_audio.."*\n_Mute voice :_ *"..mutes.mute_voice.."*\n_Mute sticker :_ *"..mutes.mute_sticker.."*\n_Mute contact :_ *"..mutes.mute_contact.."*\n_Mute forward :_ *"..mutes.mute_forward.."*\n_Mute location :_ *"..mutes.mute_location.."*\n_Mute document :_ *"..mutes.mute_document.."*\n_Mute TgService :_ *"..mutes.mute_tgservice.."*\n_Mute Keyboard :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel*: @GODILOVEYOUME2\n*Group Language* : *EN*"
+ text = " *Group Mute List👥🔇* : \n_Mute all🔹 : _ *"..mutes.mute_all.."*\n_Mute gif🔸 :_ *"..mutes.mute_gif.."*\n_Mute text🔹 :_ *"..mutes.mute_text.."*\n_Mute inline🔸 :_ *"..mutes.mute_inline.."*\n_Mute game🔹 :_ *"..mutes.mute_game.."*\n_Mute photo🔸 :_ *"..mutes.mute_photo.."*\n_Mute video :_ *"..mutes.mute_video.."*\n_Mute audio🔹 :_ *"..mutes.mute_audio.."*\n_Mute voice :_ *"..mutes.mute_voice.."*\n_Mute sticker🔹 :_ *"..mutes.mute_sticker.."*\n_Mute contact🔸 :_ *"..mutes.mute_contact.."*\n_Mute forward🔹 :_ *"..mutes.mute_forward.."*\n_Mute location🔸 :_ *"..mutes.mute_location.."*\n_Mute document🔹 :_ *"..mutes.mute_document.."*\n_Mute TgService🔸 :_ *"..mutes.mute_tgservice.."*\n_Mute Keyboard🔹 :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel🔮*: @GODILOVEYOUME2\n*Group Language* : *English🇮🇸*"
 else
 local mutes = data[tostring(target)]["mutes"] 
- text = " *لیست بیصدا ها* : \n_بیصدا همه : _ *"..mutes.mute_all.."*\n_بیصدا تصاویر متحرک :_ *"..mutes.mute_gif.."*\n_بیصدا متن :_ *"..mutes.mute_text.."*\n_بیصدا کیبورد شیشه ای :_ *"..mutes.mute_inline.."*\n_بیصدا بازی های تحت وب :_ *"..mutes.mute_game.."*\n_بیصدا عکس :_ *"..mutes.mute_photo.."*\n_بیصدا فیلم :_ *"..mutes.mute_video.."*\n_بیصدا آهنگ :_ *"..mutes.mute_audio.."*\n_بیصدا صدا :_ *"..mutes.mute_voice.."*\n_بیصدا برچسب :_ *"..mutes.mute_sticker.."*\n_بیصدا مخاطب :_ *"..mutes.mute_contact.."*\n_بیصدا نقل قول :_ *"..mutes.mute_forward.."*\n_بیصدا موقعیت :_ *"..mutes.mute_location.."*\n_بیصدا اسناد :_ *"..mutes.mute_document.."*\n_بیصدا خدمات تلگرام :_ *"..mutes.mute_tgservice.."*\n_بیصدا صفحه کلید :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel*: @GODILOVEYOUME2\n_زبان سوپرگروه_ : *FA*"
+ text = " *👥🔇لیست بیصدا ها* : \n_🔹بیصدا همه : _ *"..mutes.mute_all.."*\n_🔸بیصدا تصاویر متحرک :_ *"..mutes.mute_gif.."*\n_🔹بیصدا متن :_ *"..mutes.mute_text.."*\n_🔸بیصدا کیبورد شیشه ای :_ *"..mutes.mute_inline.."*\n_🔹بیصدا بازی های تحت وب :_ *"..mutes.mute_game.."*\n_🔸بیصدا عکس :_ *"..mutes.mute_photo.."*\n_🔹بیصدا فیلم :_ *"..mutes.mute_video.."*\n_بیصدا آهنگ :_ *"..mutes.mute_audio.."*\n_🔹بیصدا صدا :_ *"..mutes.mute_voice.."*\n_🔸بیصدا برچسب :_ *"..mutes.mute_sticker.."*\n_🔹بیصدا مخاطب :_ *"..mutes.mute_contact.."*\n_🔸بیصدا نقل قول :_ *"..mutes.mute_forward.."*\n_🔹بیصدا موقعیت :_ *"..mutes.mute_location.."*\n_🔸بیصدا اسناد :_ *"..mutes.mute_document.."*\n_🔹بیصدا خدمات تلگرام :_ *"..mutes.mute_tgservice.."*\n_🔸بیصدا صفحه کلید :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel🔮*: @GODILOVEYOUME2\n_زبان سوپرگروه_ : *فارسی🇮🇷*"
 end
 return text
 end
@@ -3057,7 +3057,7 @@ return "*زبان گروه تنظیم شد به : فارسی*"
 end
 end
 
-if matches[1] == "help" and is_mod(msg) then
+🔐if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
 *💎BLACK Bot Commands:*
@@ -3087,7 +3087,7 @@ _Unsilent User From Group_
 _Kick User From Group_
 
 *!ban* `[username|id|reply]` 
-_Ban User From Group_
+_Ban User From Group🚫_
 
 *!unban* `[username|id|reply]` 
 _UnBan User From Group_
@@ -3102,16 +3102,16 @@ _Show User ID_
 _Show User's Username And Name_
 
 *!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_If This Actions Lock, Bot Check Actions And Delete Them_
+_If This Actions Lock, Bot Check Actions And Delete Them🔐_
 
 *!unlock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_If This Actions Unlock, Bot Not Delete Them_
+_If This Actions Unlock, Bot Not Delete Them🔓_
 
 *!mute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_If This Actions Lock, Bot Check Actions And Delete Them_
+_If This Actions Lock, Bot Check Actions And Delete Them📍_
 
 *!unmute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_If This Actions Unlock, Bot Not Delete Them_
+_If This Actions Unlock, Bot Not Delete Them📍_
 
 *!set*`[rules | name | photo | link | about | welcome]`
 _Bot Set Them_
@@ -3236,16 +3236,16 @@ _نمایش شناسه کاربر_
 _نمایش نام کاربر, نام کاربری و اطلاعات حساب_
 
 *!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_در صورت قفل بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
+_🔐در صورت قفل بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
 
 *!unlock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
-_در صورت قفل نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
+_🔓در صورت قفل نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
 
 *!mute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_در صورت بیصدد بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
+_📍در صورت بیصدد بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
 
 *!unmute* `[gif | photo | document | sticker | keyboard | video | text | forward | location | audio | voice | contact | all]`
-_در صورت بیصدا نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
+_📍در صورت بیصدا نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
 
 *!set*`[rules | name | photo | link | about | welcome]`
 _ربات آنهارا ثبت خواهد کرد_
