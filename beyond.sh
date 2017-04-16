@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/BDReborn
+cd $HOME/MaTaDoR
 
 install() {
 	    cd tg
@@ -25,20 +25,20 @@ install() {
 
 function print_logo() {
 	echo -e "\033[38;5;600m"
-	echo -e "          ____  ____     _____"
-	echo -e "         |  _ )|  _ \   |_   _|___ ____   __  __"
-	echo -e "         |  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
-	echo -e "         |____/|____/     |_|\____/\_____|_/\/\_|"
+	echo -e " $f1  ▀▄   ▄▀     $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4  ▀▄   ▄▀     $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst"
+	echo -e " $f1 ▄█▀███▀█▄    $f2███▀▀██▀▀███   $f3▄█▀██▀█▄   $f4 ▄█▀███▀█▄    $f5███▀▀██▀▀███   $f6▄█▀██▀█▄$rst"
+	echo -e " $f1█▀███████▀█   $f2▀▀███▀▀███▀▀   $f3▀█▀██▀█▀   $f4█▀███████▀█   $f5▀▀███▀▀███▀▀   $f6▀█▀██▀█▀$rst"
+	echo -e " $f1▀ ▀▄▄ ▄▄▀ ▀   $f2 ▀█▄ ▀▀ ▄█▀    $f3▀▄    ▄▀   $f4▀ ▀▄▄ ▄▄▀ ▀   $f5 ▀█▄ ▀▀ ▄█▀    $f6▀▄    ▄▀$rst"
 	echo -e "\n\e[36m"
 }
 
 function logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]=" ____  ____     _____"
-    txtlogo[2]="|  _ )|  _ \   |_   _|___ ____   __  __"
-    txtlogo[3]="|  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
-    txtlogo[4]="|____/|____/     |_|\____/\_____|_/\/\_|"
+    txtlogo[1]=" $f1  ▀▄   ▄▀     $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4  ▀▄   ▄▀     $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst"
+    txtlogo[2]=" $f1 ▄█▀███▀█▄    $f2███▀▀██▀▀███   $f3▄█▀██▀█▄   $f4 ▄█▀███▀█▄    $f5███▀▀██▀▀███   $f6▄█▀██▀█▄$rst"
+    txtlogo[3]=" $f1█▀███████▀█   $f2▀▀███▀▀███▀▀   $f3▀█▀██▀█▀   $f4█▀███████▀█   $f5▀▀███▀▀███▀▀   $f6▀█▀██▀█▀$rst"
+    txtlogo[4]=" $f1▀ ▀▄▄ ▄▄▀ ▀   $f2 ▀█▄ ▀▀ ▄█▀    $f3▀▄    ▄▀   $f4▀ ▀▄▄ ▄▄▀ ▀   $f5 ▀█▄ ▀▀ ▄█▀    $f6▀▄    ▄▀$rst"
     printf "\033[38;5;600m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
@@ -67,7 +67,7 @@ if [ ! -f ./tg/tgcli ]; then
    echo -e "     >>>>                       We Are Not Alliance                             "
    echo -e "     >>>>                       We Are Family                                   "
    echo -e "     >>>>                       We Are The Best :-)                             "
-   echo -e "     >>>>                       @GODILOVEYOUME2                                    "
+   echo -e "     >>>>                         @GODILOVEYOUME2                                     "
    echo -e "\033[0;00m"
    echo -e "\e[36m"
    logo_play
