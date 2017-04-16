@@ -3027,8 +3027,7 @@ end
     return filter_word(msg, matches[2])
   end
   if matches[1] == 'unfilter' and is_mod(msg) then
-    return unfilter_word(msg, matches[2])
-  end
+    return unfilter_word(msg, matches[2])  end
   if matches[1] == 'filterlist' and is_mod(msg) then
     return filter_list(msg)
   end
@@ -3063,10 +3062,10 @@ text = [[
 *💎BLACK Bot Commands:*
 
 *!setowner* `[username|id|reply]` 
-_Set Group Owner(Multi Owner)_
+_Set Group Owner(Multi Owner)🍂_
 
 *!remowner* `[username|id|reply]` 
- _Remove User From Owner List_
+ _Remove User From Owner List🍂_
 
 *!promote* `[username|id|reply]` 
 _Promote User To Group Admin_
@@ -3117,7 +3116,7 @@ _If This Actions Unlock, Bot Not Delete Them📍_
 _Bot Set Them_
 
 *!clean* `[bans | mods | bots | rules | about | silentlist | filtelist | welcome]`   
-_Bot Clean Them_
+_Bot Clean Them⚡️_
 
 *!filter* `[word]`
 _Word filter_
@@ -3197,16 +3196,16 @@ text = [[
 *💎دستورات ربات بلک:*
 
 *!setowner* `[username|id|reply]` 
-_انتخاب مالک گروه(قابل انتخاب چند مالک)_
+_🍂انتخاب مالک گروه(قابل انتخاب چند مالک)_
 
 *!remowner* `[username|id|reply]` 
- _حذف کردن فرد از فهرست مالکان گروه_
+ _🍂حذف کردن فرد از فهرست مالکان گروه_
 
 *!promote* `[username|id|reply]` 
-_ارتقا مقام کاربر به مدیر گروه_
+_✨ارتقا مقام کاربر به مدیر گروه_
 
 *!demote* `[username|id|reply]` 
-_تنزیل مقام مدیر به کاربر_
+_✨تنزیل مقام مدیر به کاربر_
 
 *!setflood* `[1-50]`
 _تنظیم حداکثر تعداد پیام مکرر_
