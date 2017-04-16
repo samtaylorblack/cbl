@@ -3000,8 +3000,7 @@ tdcli.changeChatTitle(chat, gp_name, dl_cb, nil)
 end
   if matches[1] == "setabout" and matches[2] and is_mod(msg) then
      if msg.to.type == "channel" then
-   tdcli.changeChannelAbout(chat, matches[2], dl_cb, nil)
-    elseif msg.to.type == "chat" then
+   tdcli.changeChannelAbout(chat, matches[2], dl_cb, nil)    elseif msg.to.type == "chat" then
     data[tostring(chat)]['about'] = matches[2]
 	  save_data(_config.moderation.data, data)
      end
@@ -3056,7 +3055,7 @@ return "*زبان گروه تنظیم شد به : فارسی*"
 end
 end
 
-🔐if matches[1] == "help" and is_mod(msg) then
+if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
 *💎BLACK Bot Commands:*
