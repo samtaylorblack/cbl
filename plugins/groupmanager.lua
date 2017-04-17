@@ -2376,10 +2376,10 @@ end
 end
 if not lang then
 local mutes = data[tostring(target)]["mutes"] 
- text = " *Group Mute List👥🔇* : \n_Mute all🔹 : _ *"..mutes.mute_all.."*\n_Mute gif🔸 :_ *"..mutes.mute_gif.."*\n_Mute text🔹 :_ *"..mutes.mute_text.."*\n_Mute inline🔸 :_ *"..mutes.mute_inline.."*\n_Mute game🔹 :_ *"..mutes.mute_game.."*\n_Mute photo🔸 :_ *"..mutes.mute_photo.."*\n_Mute video :_ *"..mutes.mute_video.."*\n_Mute audio🔹 :_ *"..mutes.mute_audio.."*\n_Mute voice :_ *"..mutes.mute_voice.."*\n_Mute sticker🔹 :_ *"..mutes.mute_sticker.."*\n_Mute contact🔸 :_ *"..mutes.mute_contact.."*\n_Mute forward🔹 :_ *"..mutes.mute_forward.."*\n_Mute location🔸 :_ *"..mutes.mute_location.."*\n_Mute document🔹 :_ *"..mutes.mute_document.."*\n_Mute TgService🔸 :_ *"..mutes.mute_tgservice.."*\n_Mute Keyboard🔹 :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel🔮*: @GODILOVEYOUME2\n*Group Language* : *English🇮🇸*"
+ text = " *Group Mute List👥🔇* : \n_Mute all🔹 : _ *"..mutes.mute_all.."*\n_Mute gif🔸 :_ *"..mutes.mute_gif.."*\n_Mute text🔹 :_ *"..mutes.mute_text.."*\n_Mute inline🔸 :_ *"..mutes.mute_inline.."*\n_Mute game🔹 :_ *"..mutes.mute_game.."*\n_Mute photo🔸 :_ *"..mutes.mute_photo.."*\n_🔹Mute video :_ *"..mutes.mute_video.."*\n_Mute audio🔹 :_ *"..mutes.mute_audio.."*\n_🔸Mute voice :_ *"..mutes.mute_voice.."*\n_Mute sticker🔹 :_ *"..mutes.mute_sticker.."*\n_Mute contact🔸 :_ *"..mutes.mute_contact.."*\n_Mute forward🔹 :_ *"..mutes.mute_forward.."*\n_Mute location🔸 :_ *"..mutes.mute_location.."*\n_Mute document🔹 :_ *"..mutes.mute_document.."*\n_Mute TgService🔸 :_ *"..mutes.mute_tgservice.."*\n_Mute Keyboard🔹 :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel🔮*: @GODILOVEYOUME2\n*Group Language* : *English🇮🇸*"
 else
 local mutes = data[tostring(target)]["mutes"] 
- text = " *👥🔇لیست بیصدا ها* : \n_🔹بیصدا همه : _ *"..mutes.mute_all.."*\n_🔸بیصدا تصاویر متحرک :_ *"..mutes.mute_gif.."*\n_🔹بیصدا متن :_ *"..mutes.mute_text.."*\n_🔸بیصدا کیبورد شیشه ای :_ *"..mutes.mute_inline.."*\n_🔹بیصدا بازی های تحت وب :_ *"..mutes.mute_game.."*\n_🔸بیصدا عکس :_ *"..mutes.mute_photo.."*\n_🔹بیصدا فیلم :_ *"..mutes.mute_video.."*\n_بیصدا آهنگ :_ *"..mutes.mute_audio.."*\n_🔹بیصدا صدا :_ *"..mutes.mute_voice.."*\n_🔸بیصدا برچسب :_ *"..mutes.mute_sticker.."*\n_🔹بیصدا مخاطب :_ *"..mutes.mute_contact.."*\n_🔸بیصدا نقل قول :_ *"..mutes.mute_forward.."*\n_🔹بیصدا موقعیت :_ *"..mutes.mute_location.."*\n_🔸بیصدا اسناد :_ *"..mutes.mute_document.."*\n_🔹بیصدا خدمات تلگرام :_ *"..mutes.mute_tgservice.."*\n_🔸بیصدا صفحه کلید :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel🔮*: @GODILOVEYOUME2\n_زبان سوپرگروه_ : *فارسی🇮🇷*"
+ text = " *👥🔇لیست بیصدا ها* : \n_🔹بیصدا همه : _ *"..mutes.mute_all.."*\n_🔸بیصدا تصاویر متحرک :_ *"..mutes.mute_gif.."*\n_🔹بیصدا متن :_ *"..mutes.mute_text.."*\n_🔸بیصدا کیبورد شیشه ای :_ *"..mutes.mute_inline.."*\n_🔹بیصدا بازی های تحت وب :_ *"..mutes.mute_game.."*\n_🔸بیصدا عکس :_ *"..mutes.mute_photo.."*\n_🔹بیصدا فیلم :_ *"..mutes.mute_video.."*\n_🔸بیصدا آهنگ :_ *"..mutes.mute_audio.."*\n_🔹بیصدا صدا :_ *"..mutes.mute_voice.."*\n_🔸بیصدا برچسب :_ *"..mutes.mute_sticker.."*\n_🔹بیصدا مخاطب :_ *"..mutes.mute_contact.."*\n_🔸بیصدا نقل قول :_ *"..mutes.mute_forward.."*\n_🔹بیصدا موقعیت :_ *"..mutes.mute_location.."*\n_🔸بیصدا اسناد :_ *"..mutes.mute_document.."*\n_🔹بیصدا خدمات تلگرام :_ *"..mutes.mute_tgservice.."*\n_🔸بیصدا صفحه کلید :_ *"..mutes.mute_keyboard.."*\n*____________________*\n*Bot channel🔮*: @GODILOVEYOUME2\n_زبان سوپرگروه_ : *فارسی🇮🇷*"
 end
 return text
 end
@@ -2942,7 +2942,7 @@ tdcli_function ({
             if not lang then
 					return "*Welcome Message not set*"
              else
-               return "پیام خوشآمد گویی ثبت نشده است"
+               return "✅پیام خوشآمد گویی ثبت نشده است"
              end
 				end
 					data[tostring(chat)]['setwelcome'] = nil
@@ -2950,7 +2950,7 @@ tdcli_function ({
              if not lang then
 				return "*Welcome message* _has been cleaned_"
           else
-            return "پیام خوشآمد گویی پاک شد"
+            return "✅پیام خوشآمد گویی پاک شد"
 			end
        end
 			if matches[2] == 'about' then
@@ -2980,7 +2980,7 @@ tdcli_function ({
              if not lang then
 					return "_No_ *owners* _in this group_"
             else
-                return "مالکی برای گروه انتخاب نشده است"
+                return "👤مالکی برای گروه انتخاب نشده است"
             end
 				end
 				for k,v in pairs(data[tostring(chat)]['owners']) do
@@ -2990,7 +2990,7 @@ tdcli_function ({
             if not lang then
 				return "_All_ *owners* _has been demoted_"
            else
-            return "تمامی مالکان گروه تنزیل مقام شدند"
+            return "✅تمامی مالکان گروه تنزیل مقام شدند"
           end
 			end
      end
@@ -3067,37 +3067,37 @@ _Set Group Owner(Multi Owner)🍂_
  _Remove User From Owner List🍂_
 
 *!promote* `[username|id|reply]` 
-_Promote User To Group Admin_
+_Promote User To Group Admin💥_
 
 *!demote* `[username|id|reply]` 
-_Demote User From Group Admins List_
+_Demote User From Group Admins List💥_
 
 *!setflood* `[1-50]`
-_Set Flooding Number_
+_Set Flooding Number🌟_
 
 *!silent* `[username|id|reply]` 
-_Silent User From Group_
+_Silent User From Group🎶_
 
 *!unsilent* `[username|id|reply]` 
-_Unsilent User From Group_
+_Unsilent User From Group🎶_
 
 *!kick* `[username|id|reply]` 
-_Kick User From Group_
+_Kick User From Group🚫_
 
 *!ban* `[username|id|reply]` 
 _Ban User From Group🚫_
 
 *!unban* `[username|id|reply]` 
-_UnBan User From Group_
+_UnBan User From Group☑️_
 
 *!res* `[username]`
-_Show User ID_
+_Show User ID📡_
 
 *!id* `[reply]`
-_Show User ID_
+_Show User ID🆔_
 
 *!whois* `[id]`
-_Show User's Username And Name_
+_Show User's Username And Name🌸_
 
 *!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
 _If This Actions Lock, Bot Check Actions And Delete Them🔐_
@@ -3112,76 +3112,76 @@ _If This Actions Lock, Bot Check Actions And Delete Them📍_
 _If This Actions Unlock, Bot Not Delete Them📍_
 
 *!set*`[rules | name | photo | link | about | welcome]`
-_Bot Set Them_
+_Bot Set Them🔸_
 
 *!clean* `[bans | mods | bots | rules | about | silentlist | filtelist | welcome]`   
 _Bot Clean Them⚡️_
 
 *!filter* `[word]`
-_Word filter_
+_Word filter💠_
 
 *!unfilter* `[word]`
-_Word unfilter_
+_Word unfilter☑️_
 
 *!pin* `[reply]`
-_Pin Your Message_
+_Pin Your Message📍_
 
 *!unpin* 
-_Unpin Pinned Message_
+_Unpin Pinned Message📍_
 
 *!welcome enable/disable*
-_Enable Or Disable Group Welcome_
+_Enable Or Disable Group Welcome🎤_
 
 *!settings*
-_Show Group Settings_
+_Show Group Settings⚙️_
 
 *!mutelist*
-_Show Mutes List_
+_Show Mutes List🔇_
 
 *!silentlist*
-_Show Silented Users List_
+_Show Silented Users List🌸_
 
 *!filterlist*
-_Show Filtered Words List_
+_Show Filtered Words List🌺_
 
 *!banlist*
-_Show Banned Users List_
+_Show Banned Users List🌺_
 
 *!ownerlist*
-_Show Group Owners List_ 
+_Show Group Owners List🍃_ 
 
 *!modlist* 
-_Show Group Moderators List_
+_Show Group Moderators List🍃_
 
 *!rules*
-_Show Group Rules_
+_Show Group Rules🍂_
 
 *!about*
-_Show Group Description_
+_Show Group Description🍂_
 
 *!id*
-_Show Your And Chat ID_
+_Show Your And Chat ID🌻
 
 *!gpinfo*
-_Show Group Information_
+_Show Group Information🌻_
 
 *!newlink*
-_Create A New Link_
+_Create A New Link🥀_
 
 *!link*
-_Show Group Link_
+_Show Group Link🥀_
 
 *!linkpv*
-_Send Group Link In Your Private Message_
+_Send Group Link In Your Private Message🌹_
 
 *!setwelcome [text]*
-_set Welcome Message_
+_set Welcome Message🌹_
 
 *!helptools*
-_Show Tools Help_
+_Show Tools Help🌷_
 
 *!helpfun*
-_Show Fun Help_
+_Show Fun Help🌷_
 
 _✅You Can Use_ *[!/#]* _To Run The Commands_
 _✅This Help List Only For_ *Moderators/Owners!*
@@ -3207,31 +3207,31 @@ _✨ارتقا مقام کاربر به مدیر گروه_
 _✨تنزیل مقام مدیر به کاربر_
 
 *!setflood* `[1-50]`
-_تنظیم حداکثر تعداد پیام مکرر_
+_🌟تنظیم حداکثر تعداد پیام مکرر_
 
 *!silent* `[username|id|reply]` 
-_بیصدا کردن کاربر در گروه_
+_🎶بیصدا کردن کاربر در گروه_
 
 *!unsilent* `[username|id|reply]` 
-_در آوردن کاربر از حالت بیصدا در گروه_
+_🎶در آوردن کاربر از حالت بیصدا در گروه_
 
 *!kick* `[username|id|reply]` 
-_حذف کاربر از گروه_
+_🚫حذف کاربر از گروه_
 
 *!ban* `[username|id|reply]` 
-_مسدود کردن کاربر از گروه_
+_🚫مسدود کردن کاربر از گروه_
 
 *!unban* `[username|id|reply]` 
-_در آوردن از حالت مسدودیت کاربر از گروه_
+_✅در آوردن از حالت مسدودیت کاربر از گروه_
 
 *!res* `[username]`
-_نمایش شناسه کاربر_
+_✅نمایش شناسه کاربر_
 
 *!id* `[reply]`
-_نمایش شناسه کاربر_
+_🆔نمایش شناسه کاربر_
 
 *!whois* `[id]`
-_نمایش نام کاربر, نام کاربری و اطلاعات حساب_
+_🌸نمایش نام کاربر, نام کاربری و اطلاعات حساب_
 
 *!lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention | pin]`
 _🔐در صورت قفل بودن فعالیت ها, ربات آنهارا حذف خواهد کرد_
@@ -3246,76 +3246,76 @@ _📍در صورت بیصدد بودن فعالیت ها, ربات آنهارا 
 _📍در صورت بیصدا نبودن فعالیت ها, ربات آنهارا حذف نخواهد کرد_
 
 *!set*`[rules | name | photo | link | about | welcome]`
-_ربات آنهارا ثبت خواهد کرد_
+_🌹ربات آنهارا ثبت خواهد کرد_
 
 *!clean* `[bans | mods | bots | rules | about | silentlist | filterlist | welcome]`   
-_ربات آنهارا پاک خواهد کرد_
+_🌹ربات آنهارا پاک خواهد کرد_
 
 *!filter* `[word]`
-_فیلتر‌کلمه مورد نظر_
+_☑️فیلتر‌کلمه مورد نظر_
 
 *!unfilter* `[word]`
-_ازاد کردن کلمه مورد نظر_
+_🌺ازاد کردن کلمه مورد نظر_
 
 *!pin* `[reply]`
-_ربات پیام شمارا در گروه سنجاق خواهد کرد_
+_📍ربات پیام شمارا در گروه سنجاق خواهد کرد_
 
 *!unpin* 
-_ربات پیام سنجاق شده در گروه را حذف خواهد کرد_
+_🌷ربات پیام سنجاق شده در گروه را حذف خواهد کرد_
 
 *!welcome enable/disable*
-_فعال یا غیرفعال کردن خوشآمد گویی_
+_🌷فعال یا غیرفعال کردن خوشآمد گویی_
 
 *!settings*
-_نمایش تنظیمات گروه_
+_⚙️نمایش تنظیمات گروه_
 
 *!mutelist*
-_نمایش فهرست بیصدا های گروه_
+_🔇نمایش فهرست بیصدا های گروه_
 
 *!silentlist*
 _نمایش فهرست افراد بیصدا_
 
 *!filterlist*
-_نمایش لیست کلمات فیلتر شده_
+_❌نمایش لیست کلمات فیلتر شده_
 
 *!banlist*
-_نمایش افراد مسدود شده از گروه_
+_❌نمایش افراد مسدود شده از گروه_
 
 *!ownerlist*
-_نمایش فهرست مالکان گروه_ 
+_🌸نمایش فهرست مالکان گروه_ 
 
 *!modlist* 
-_نمایش فهرست مدیران گروه_
+_🌸نمایش فهرست مدیران گروه_
 
 *!rules*
-_نمایش قوانین گروه_
+_🌸نمایش قوانین گروه_
 
 *!about*
-_نمایش درباره گروه_
+_🍂نمایش درباره گروه_
 
 *!id*
-_نمایش شناسه شما و گروه_
+_🍃نمایش شناسه شما و گروه_
 
 *!gpinfo*
-_نمایش اطلاعات گروه_
+_🍂نمایش اطلاعات گروه_
 
 !*newlink*
-_ساخت لینک جدید_
+_🍃ساخت لینک جدید_
 
 *!link*
-_نمایش لینک گروه_
+_🍂نمایش لینک گروه_
 
 *!linkpv*
-_ارسال لینک گروه به چت خصوصی شما_
+_🍃ارسال لینک گروه به چت خصوصی شما_
 
 *!setwelcome [text]*
-_ثبت پیام خوش آمد گویی_
+_🌸ثبت پیام خوش آمد گویی_
 
 *!helptools*
-_نمایش راهنمای Tools_
+_نمایش راهنمای Tools🌼_
 
 *!helpfun*
-_نمایش راهنمای سرگرمی_
+_🌼نمایش راهنمای سرگرمی_
 
 _شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید✅
 
